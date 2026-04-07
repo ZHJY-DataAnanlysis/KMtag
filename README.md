@@ -1,7 +1,6 @@
 # Implement of HPT: Hierarchy-aware Prompt Tuning for Hierarchical Text Classification
 This repository implements a prompt tuning model for hierarchical text classification. 
-This work has been accepted as the long paper [HPT: Hierarchy-aware Prompt Tuning for Hierarchical Text Classification](https://arxiv.org/pdf/2204.13413.pdf)
-in EMNLP 2022.
+
 
 ## Requirements
 
@@ -123,28 +122,4 @@ Test on provided checkpoints:
 python test.py --name WebOfScience-HPT --batch 64
 python test.py --name rcv1-HPT --batch 64
 python test.py --name nyt-HPT --batch 64
-```
-
-# Citation
-
-```
-@inproceedings{wang-etal-2022-hpt,
-    title = "{HPT}: Hierarchy-aware Prompt Tuning for Hierarchical Text Classification",
-    author = "Wang, Zihan  and
-      Wang, Peiyi  and
-      Liu, Tianyu  and
-      Lin, Binghuai  and
-      Cao, Yunbo  and
-      Sui, Zhifang  and
-      Wang, Houfeng",
-    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
-    month = dec,
-    year = "2022",
-    address = "Abu Dhabi, United Arab Emirates",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.emnlp-main.246",
-    doi = "10.18653/v1/2022.emnlp-main.246",
-    pages = "3740--3751",
-}
-
 ```
