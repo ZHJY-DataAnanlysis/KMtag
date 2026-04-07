@@ -1,5 +1,5 @@
-# Implement of HPT: Hierarchy-aware Prompt Tuning for Hierarchical Text Classification
-This repository implements a prompt tuning model for hierarchical text classification. 
+# Implement of KMTag: A Knowledge Hierarchy-Aware Framework for Multi-Knowledge Tagging of Mathematical Questions
+This repository implements a knowledge hierarchy-aware framework for multi-knowledge tagging of mathematical questions. 
 
 
 ## Requirements
@@ -77,22 +77,6 @@ Checkpoints are in `./checkpoints/DATA-NAME`. Two checkpoints are kept based on 
 ```shell
 python train.py --name test --batch 16 --data WebOfScience
 ```
-
-### Reproducibility
-
-We experiment on one GeForce RTX 3090 GPU (24G) with CUDA version $11.2$. We use a batch size of $16$ to fully tap one GPU.
-
-The model is trained for around 20 epochs before an early stop with ~10 min/epoch.
-
-Our model has no extra hyperparameters: all hyperparameters follow previous works and have not been tuned.
-
-Checkpoints for each dataset can be downloaded [here](https://drive.google.com/drive/folders/1j1PMzo4YLG8oUAnuolvmfn-dA9A43yIS?usp=sharing). Place the `checkpoints` folder inside the main folder (`HPT/checkpoints`). These results are reported in the main experiment.
-
-| Dataset        | Macro-F1           | Micro-F1           |
-| -------------- | ------------------ | ------------------ |
-| NYT            | 0.7041934624814794 | 0.8041512855978236 |
-| RCV1-V2        | 0.6953327068021089 | 0.8726110320904367 |
-| Web Of Science | 0.8192644031945633 | 0.8715855067014047 |
 
 ## Test
 
