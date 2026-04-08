@@ -17,6 +17,17 @@ This repository implements a knowledge hierarchy-aware framework for multi-knowl
 
 Please download the original dataset and then use these scripts.
 
+### MKQues
+
+The original dataset can be acquired in [the repository of MKQues](https://github.com/ZHJY-DataAnanlysis/KMtag/tree/main/data/MKQues). 
+Please save the EXCEL data file `Data.xlsx` in `MKQues/Meta-data` as `Data.txt`.
+
+```shell
+cd data/MKQues
+python preprocess_wos.py
+python data_wos.py
+```
+
 ### Web Of Science
 
 The original dataset can be acquired in [the repository of HDLTex](https://github.com/kk7nc/HDLTex). Preprocessing code could refer to [the repository of HiAGM](https://github.com/Alibaba-NLP/HiAGM) and we provide a copy of preprocessing code here.
