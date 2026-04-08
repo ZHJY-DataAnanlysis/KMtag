@@ -28,40 +28,6 @@ python preprocess_wos.py
 python data_wos.py
 ```
 
-### Web Of Science
-
-The original dataset can be acquired in [the repository of HDLTex](https://github.com/kk7nc/HDLTex). Preprocessing code could refer to [the repository of HiAGM](https://github.com/Alibaba-NLP/HiAGM) and we provide a copy of preprocessing code here.
-Please save the Excel data file `Data.xlsx` in `WebOfScience/Meta-data` as `Data.txt`.
-
-```shell
-cd data/WebOfScience
-python preprocess_wos.py
-python data_wos.py
-```
-
-### NYT
-
-The original dataset can be acquired [here](https://catalog.ldc.upenn.edu/LDC2008T19).
-Place the **unzipped** folder `nyt_corpus` inside `data/nyt` (or unzip `nyt_corpus_LDC2008T19.tgz` inside `data/nyt`).
-
-```shell
-cd data/nyt
-# unzip if necessary
-# tar -zxvf nyt_corpus_LDC2008T19.tgz -C ./
-python data_nyt.py
-```
-
-### RCV1-V2
-
-The preprocessing code could refer to the [repository of reuters_loader](https://github.com/ductri/reuters_loader) and we provide a copy here. The original dataset can be acquired [here](https://trec.nist.gov/data/reuters/reuters.html) by signing an agreement.
-Place `rcv1.tar.xz` and `lyrl2004_tokens_train.dat` (can be downloaded [here](https://jmlr.csail.mit.edu/papers/volume5/lewis04a/a13-vector-files/lyrl2004_vectors_train.dat.gz)) inside `data/rcv1`.
-
-```shell
-cd data/rcv1
-python preprocess_rcv1.py ./
-python data_rcv1.py
-```
-
 ## Train
 
 ```
